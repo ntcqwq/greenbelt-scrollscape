@@ -27,7 +27,7 @@ export const ParallaxSection = ({
     <section 
       id={id}
       ref={ref}
-      className={`parallax-container relative min-h-screen flex items-center justify-center ${className}`}
+      className={`parallax-container ${className}`}
     >
       {/* Parallax Background */}
       <motion.div
@@ -38,20 +38,20 @@ export const ParallaxSection = ({
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           transform: `translateY(${parallaxOffset}px)`,
-          scale: 1.1, // Slight scale to prevent gaps during parallax
+          scale: 1.1,
         }}
       />
       
       {/* Overlay */}
       {overlay && (
-        <div className="absolute inset-0 bg-gradient-section" />
+        <div className="absolute inset-0 bg-black/40" />
       )}
 
-      {/* Content */}
+      {/* Content Container */}
       <motion.div
-        className="relative z-10 w-full"
-        initial={{ opacity: 0, y: 60 }}
-        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 60 }}
+        className="content-container"
+        initial={{ opacity: 0, y: 40 }}
+        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         {children}
