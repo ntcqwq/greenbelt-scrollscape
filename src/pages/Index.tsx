@@ -1,12 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Navigation } from '@/components/Navigation';
+import { ScrollProgress } from '@/components/ScrollProgress';
+import { HeroSection } from '@/components/HeroSection';
+import { MissionSection } from '@/components/MissionSection';
+import { ImpactSection } from '@/components/ImpactSection';
+import { GuardiansSection } from '@/components/GuardiansSection';
+import { GallerySection } from '@/components/GallerySection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="bg-background text-foreground">
+      <ScrollProgress />
+      <Navigation />
+      
+      <main>
+        <HeroSection />
+        <MissionSection />
+        <ImpactSection />
+        <GuardiansSection />
+        <GallerySection />
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-card py-12">
+        <div className="container mx-auto px-6 text-center">
+          <div className="text-2xl font-bold bg-gradient-text bg-clip-text text-transparent mb-4">
+            Greenbelt Guardians
+          </div>
+          <p className="text-muted-foreground mb-6">
+            Protecting Ontario's natural heritage for future generations
+          </p>
+          <p className="text-sm text-muted-foreground">
+            © 2024 Greenbelt Guardians. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
