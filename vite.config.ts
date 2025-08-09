@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     // For GitHub Pages project sites, the site lives at /REPO_NAME/
-    base: isProd ? `/${repo}/` : "/",
+    base: isProd ? "/greenbelt-scrollscape/" : "/",
 
     server: {
       host: "::",
