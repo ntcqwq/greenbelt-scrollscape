@@ -12,7 +12,7 @@ export const HeroSection = () => {
       <div className="text-center space-y-8">
         <AnimatedText delay={0.2}>
           <h2 className="text-lg md:text-xl text-primary-glow tracking-wide uppercase font-medium">
-            Protecting Ontario&apos;s
+            Youth Guardians of Ontario&apos;s
           </h2>
         </AnimatedText>
         
@@ -24,9 +24,8 @@ export const HeroSection = () => {
         
         <AnimatedText delay={0.6}>
           <p className="section-text">
-            We are the guardians of Ontario&apos;s most precious natural heritage. 
-            Through dedicated conservation, community engagement, and sustainable practices, 
-            we protect the vital ecosystems that sustain our province.
+            We&apos;re youth guardians of Ontario&apos;s Greenbelt – one voice, one story, one petition at a time.
+            Join our movement to protect the land that protects us.
           </p>
         </AnimatedText>
 
@@ -37,7 +36,7 @@ export const HeroSection = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Join Our Mission
+              Share Your Story
             </motion.button>
             
             <motion.button
@@ -45,7 +44,7 @@ export const HeroSection = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Learn More
+              Sign Our Petition
             </motion.button>
           </div>
         </AnimatedText>

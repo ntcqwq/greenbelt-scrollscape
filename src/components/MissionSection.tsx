@@ -18,30 +18,47 @@ export const MissionSection = () => {
         </AnimatedText>
         
         <AnimatedText delay={0.4}>
-          <p className="section-text mb-12">
-            The Ontario Greenbelt represents more than 2 million acres of protected 
-            countryside, farmland, forests, wetlands, and watersheds. We stand as 
-            its guardians, ensuring this irreplaceable natural heritage remains 
-            intact for future generations.
+          <p className="section-text mb-8">
+            At Greenbelt Guardians, we value youth voices, environmental justice, 
+            and the power of community to protect the land that protects us.
           </p>
+        </AnimatedText>
+
+        <AnimatedText delay={0.5}>
+          <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 mb-12 nature-border">
+            <h3 className="text-xl font-bold text-primary mb-4">Our Core Values</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
+              <div className="space-y-2">
+                <div className="text-primary font-semibold">🌱 Youth Leadership</div>
+                <div className="text-primary font-semibold">🌍 Environmental Justice</div>
+              </div>
+              <div className="space-y-2">
+                <div className="text-primary font-semibold">🤝 Community Power</div>
+                <div className="text-primary font-semibold">📢 Authentic Voices</div>
+              </div>
+              <div className="space-y-2">
+                <div className="text-primary font-semibold">🏞️ Land Protection</div>
+              </div>
+            </div>
+          </div>
         </AnimatedText>
 
         <div className="card-grid cols-3">
           {[
             {
-              title: "Conservation",
-              description: "Protecting critical habitats and biodiversity through scientific research and community action.",
-              icon: "🌲"
+              title: "Story Collection",
+              description: "Gathering authentic youth voices and personal experiences about why the Greenbelt matters.",
+              icon: "📝"
             },
             {
-              title: "Education", 
-              description: "Raising awareness about the importance of the Greenbelt through outreach and educational programs.",
-              icon: "📚"
+              title: "Community Engagement", 
+              description: "Building a movement of young people through social media, events, and grassroots organizing.",
+              icon: "🤝"
             },
             {
-              title: "Advocacy",
-              description: "Working with policymakers to strengthen protections and oppose harmful development.",
-              icon: "🛡️"
+              title: "Government Advocacy",
+              description: "Presenting our petition and stories directly to government officials and policymakers.",
+              icon: "🏛️"
             }
           ].map((item, index) => (
             <AnimatedText key={item.title} delay={0.6 + index * 0.2}>
