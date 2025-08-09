@@ -3,6 +3,7 @@ import { ScrollProgress } from '@/components/ScrollProgress';
 import { HeroSection } from '@/components/HeroSection';
 import { MissionSection } from '@/components/MissionSection';
 import { ImpactSection } from '@/components/ImpactSection';
+import { CommunityVoicesSection } from '@/components/CommunityVoicesSection';
 import { GuardiansSection } from '@/components/GuardiansSection';
 import { GallerySection } from '@/components/GallerySection';
 
@@ -16,6 +17,7 @@ const Index = () => {
         <HeroSection />
         <MissionSection />
         <ImpactSection />
+        <CommunityVoicesSection />
         <GuardiansSection />
         <GallerySection />
       </main>
