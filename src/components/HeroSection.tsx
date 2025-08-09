@@ -31,21 +31,27 @@ export const HeroSection = () => {
 
         <AnimatedText delay={0.8}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <motion.button
-              className="px-8 py-4 bg-primary hover:bg-primary-glow text-primary-foreground rounded-xl font-semibold shadow-glow transition-all duration-300"
+            <motion.a
+              href="https://forms.gle/ky1N9sEuLsnVat1t5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-primary hover:bg-primary-glow text-primary-foreground rounded-xl font-semibold shadow-glow transition-all duration-300 inline-block text-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Share Your Story
-            </motion.button>
+            </motion.a>
             
-            <motion.button
-              className="px-8 py-4 nature-border text-foreground rounded-xl font-semibold transition-all duration-300"
+            <motion.a
+              href="https://www.instagram.com/greenbelt_guardians/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 nature-border text-foreground rounded-xl font-semibold transition-all duration-300 inline-block text-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Sign Our Petition
-            </motion.button>
+              Follow Us on Instagram
+            </motion.a>
           </div>
         </AnimatedText>
 
