@@ -19,9 +19,9 @@ export const ImpactSection = () => {
     >
       <div className="text-center">
         <AnimatedText delay={0.2}>
-          <h2 className="section-heading glow-text">
-            Our Impact
-          </h2>
+            <h2 className="section-heading glow-text">
+              The Ontario Greenbelt
+            </h2>
         </AnimatedText>
 
         <AnimatedText delay={0.4}>

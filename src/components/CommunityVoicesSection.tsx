@@ -52,35 +52,42 @@ export const CommunityVoicesSection = () => {
             </p>
           </AnimatedText>
 
-          <div className="card-grid cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {submissions.map((submission, index) => {
               const IconComponent = submission.icon;
+              const stickyColors = [
+                'bg-yellow-200 dark:bg-yellow-300/20 border-yellow-300 dark:border-yellow-400/30',
+                'bg-pink-200 dark:bg-pink-300/20 border-pink-300 dark:border-pink-400/30',
+                'bg-blue-200 dark:bg-blue-300/20 border-blue-300 dark:border-blue-400/30',
+                'bg-green-200 dark:bg-green-300/20 border-green-300 dark:border-green-400/30'
+              ];
+              const rotations = ['rotate-1', '-rotate-1', 'rotate-2', '-rotate-2'];
+              
               return (
                 <AnimatedText key={`${submission.title}-${index}`} delay={0.6 + index * 0.1}>
                   <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    transition={{ duration: 0.3 }}
+                    className={`${stickyColors[index]} ${rotations[index]} relative p-6 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-solid rounded-lg`}
+                    whileHover={{ scale: 1.05, rotate: 0 }}
+                    whileTap={{ scale: 0.98 }}
+                    transition={{ duration: 0.2 }}
                   >
-                    <Card className="h-full nature-border bg-card/50 backdrop-blur-sm hover:shadow-glow transition-all duration-300">
-                      <CardHeader className="pb-3">
-                        <div className="flex items-center gap-3 mb-2">
-                          <div className="p-2 rounded-lg bg-primary/10">
-                            <IconComponent className="w-5 h-5 text-primary" />
-                          </div>
-                          <div className="text-sm text-muted-foreground">
-                            {submission.location}
-                          </div>
-                        </div>
-                        <CardTitle className="text-lg font-semibold text-foreground">
-                          {submission.title}
-                        </CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-foreground/80 leading-relaxed text-sm">
-                          "{submission.content}"
-                        </p>
-                      </CardContent>
-                    </Card>
+                    {/* Sticky note "tape" effect */}
+                    <div className="absolute -top-2 left-1/4 w-16 h-4 bg-white/30 dark:bg-gray-600/30 rounded-sm shadow-sm"></div>
+                    
+                    <div className="flex items-center gap-2 mb-3">
+                      <IconComponent className="w-4 h-4 text-gray-700 dark:text-gray-300" />
+                      <span className="text-xs font-medium text-gray-600 dark:text-gray-400 uppercase tracking-wide">
+                        {submission.location}
+                      </span>
+                    </div>
+                    
+                    <h3 className="text-base font-semibold text-gray-800 dark:text-gray-200 mb-3">
+                      {submission.title}
+                    </h3>
+                    
+                    <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed italic">
+                      "{submission.content}"
+                    </p>
                   </motion.div>
                 </AnimatedText>
               );
