@@ -25,9 +25,18 @@ export const ImpactSection = () => {
         </AnimatedText>
 
         <AnimatedText delay={0.4}>
+          <p className="section-text mb-8">
+            Ontario&apos;s Greenbelt is the world&apos;s largest protected greenbelt, stretching over 
+            two million acres of farmland, forests, wetlands, rivers, and lakes that wrap around 
+            the Greater Toronto Area.
+          </p>
+        </AnimatedText>
+
+        <AnimatedText delay={0.5}>
           <p className="section-text mb-12">
-            The Ontario Greenbelt delivers over CAD $2.6 billion annually in ecosystem services
-            and supports our communities in countless ways. Here&apos;s why we fight to protect it.
+            It delivers over CAD $2.6 billion annually in ecosystem services, safeguarding clean water, 
+            preventing flooding, preserving fertile farmland, supporting biodiversity, and storing carbon. 
+            Here&apos;s why we fight to protect it.
           </p>
         </AnimatedText>
 

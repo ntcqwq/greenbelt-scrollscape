@@ -19,8 +19,18 @@ export const MissionSection = () => {
         
         <AnimatedText delay={0.4}>
           <p className="section-text mb-8">
-            At Greenbelt Guardians, we value youth voices, environmental justice, 
-            and the power of community to protect the land that protects us.
+            In 2022, the Ford government announced it would remove 7,400 acres from the Greenbelt 
+            for housing development. Citizens protested, watchdogs condemned the plan, and even the RCMP 
+            began investigating. By 2023, the pressure forced the government to back down and restore 
+            the Greenbelt.
+          </p>
+        </AnimatedText>
+
+        <AnimatedText delay={0.5}>
+          <p className="section-text mb-8">
+            That&apos;s where Greenbelt Guardians comes in. We&apos;re a youth-led movement making sure 
+            the government knows the next generation is watching. Our mission is simple: to protect 
+            the land that protects us.
           </p>
         </AnimatedText>
 
