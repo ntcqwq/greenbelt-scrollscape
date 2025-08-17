@@ -25,18 +25,28 @@ export const ImpactSection = () => {
         </AnimatedText>
 
         <AnimatedText delay={0.4}>
-          <p className="section-text mb-8">
-            Ontario&apos;s Greenbelt is the world&apos;s largest protected greenbelt, stretching over 
-            two million acres of farmland, forests, wetlands, rivers, and lakes that wrap around 
-            the Greater Toronto Area.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="text-center p-6 nature-border rounded-2xl bg-card/50 backdrop-blur-sm">
+              <div className="text-3xl mb-3">🌍</div>
+              <div className="text-xl font-bold text-primary mb-2">World's Largest</div>
+              <div className="text-sm text-muted-foreground">Protected greenbelt around a major urban area</div>
+            </div>
+            <div className="text-center p-6 nature-border rounded-2xl bg-card/50 backdrop-blur-sm">
+              <div className="text-3xl mb-3">🏞️</div>
+              <div className="text-xl font-bold text-primary mb-2">2+ Million Acres</div>
+              <div className="text-sm text-muted-foreground">Farmland, forests, wetlands, rivers & lakes</div>
+            </div>
+            <div className="text-center p-6 nature-border rounded-2xl bg-card/50 backdrop-blur-sm">
+              <div className="text-3xl mb-3">🏙️</div>
+              <div className="text-xl font-bold text-primary mb-2">Wraps Around GTA</div>
+              <div className="text-sm text-muted-foreground">Protecting Canada's most populated region</div>
+            </div>
+          </div>
         </AnimatedText>
 
         <AnimatedText delay={0.5}>
           <p className="section-text mb-12">
-            It delivers over CAD $2.6 billion annually in ecosystem services, safeguarding clean water, 
-            preventing flooding, preserving fertile farmland, supporting biodiversity, and storing carbon. 
-            Here&apos;s why we fight to protect it.
+            Here&apos;s why we fight to protect this incredible natural treasure:
           </p>
         </AnimatedText>
 
