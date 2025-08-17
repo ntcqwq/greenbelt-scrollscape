@@ -16,6 +16,7 @@ export const GuardiansSection = () => {
       id="guardians"
       backgroundImage={guardiansImage}
       parallaxSpeed={0.5}
+      overlayOpacity={0.6}
     >
       <div className="text-center">
         <AnimatedText delay={0.2}>

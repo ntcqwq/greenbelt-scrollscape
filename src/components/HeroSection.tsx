@@ -8,6 +8,7 @@ export const HeroSection = () => {
     <ParallaxSection 
       backgroundImage={heroImage}
       parallaxSpeed={0.3}
+      overlayOpacity={0.3}
     >
       <div className="text-center space-y-8">
         <AnimatedText delay={0.2}>

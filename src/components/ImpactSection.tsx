@@ -16,6 +16,7 @@ export const ImpactSection = () => {
       id="impact"
       backgroundImage={wetlandsImage}
       parallaxSpeed={0.6}
+      overlayOpacity={0.6}
     >
       <div className="text-center">
         <AnimatedText delay={0.2}>

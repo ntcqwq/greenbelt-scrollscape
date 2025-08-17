@@ -9,6 +9,7 @@ interface ParallaxSectionProps {
   className?: string;
   parallaxSpeed?: number;
   overlay?: boolean;
+  overlayOpacity?: number;
   id?: string;
 }
 
@@ -18,6 +19,7 @@ export const ParallaxSection = ({
   className = '', 
   parallaxSpeed = 0.5,
   overlay = true,
+  overlayOpacity = 0.4,
   id 
 }: ParallaxSectionProps) => {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: false });
@@ -44,7 +46,7 @@ export const ParallaxSection = ({
       
       {/* Overlay */}
       {overlay && (
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0" style={{ backgroundColor: `rgba(0, 0, 0, ${overlayOpacity})` }} />
       )}
 
       {/* Content Container */}

@@ -9,6 +9,7 @@ export const MissionSection = () => {
       id="mission"
       backgroundImage={forestImage}
       parallaxSpeed={0.4}
+      overlayOpacity={0.6}
     >
       <div className="text-center">
         <AnimatedText delay={0.2}>
