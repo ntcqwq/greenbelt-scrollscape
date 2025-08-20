@@ -26,13 +26,13 @@ const Index = () => {
       <footer className="bg-card py-12">
         <div className="container mx-auto px-6 text-center">
           <div className="text-2xl font-bold bg-gradient-text bg-clip-text text-transparent mb-4">
-            Greenbelt Guardians
+            Gen-Greenbelt
           </div>
           <p className="text-muted-foreground mb-6">
             Protecting Ontario's natural heritage for future generations
           </p>
           <p className="text-sm text-muted-foreground">
-            © 2024 Greenbelt Guardians. All rights reserved.
+            © 2024 Gen-Greenbelt. All rights reserved.
           </p>
         </div>
       </footer>

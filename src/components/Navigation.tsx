@@ -35,7 +35,7 @@ export const Navigation = () => {
             className="text-2xl font-bold bg-gradient-text bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}
           >
-            Greenbelt Guardians
+            Gen-Greenbelt
           </motion.div>
 
           <div className="hidden md:flex space-x-8">

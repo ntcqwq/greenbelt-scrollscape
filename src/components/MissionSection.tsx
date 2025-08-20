@@ -76,7 +76,7 @@ export const MissionSection = () => {
               <div className="text-4xl mb-4">🛡️</div>
               <h3 className="text-2xl font-bold text-primary mb-4">That&apos;s Where We Come In</h3>
               <p className="text-lg text-foreground/90 leading-relaxed">
-                <strong>Greenbelt Guardians</strong> - a youth-led movement making sure the government 
+                <strong>Gen-Greenbelt</strong> - a youth-led movement making sure the government 
                 knows the next generation is watching. Our mission is simple:
               </p>
               <div className="text-2xl font-bold text-primary mt-4 glow-text">
