@@ -11,8 +11,8 @@ export default defineConfig(({ mode }) => {
     process.env.GH_PAGES_REPO /* e.g. "greenbelt-guardians" */ || "greenbelt-scrollscape";
 
   return {
-    // For GitHub Pages project sites, the site lives at /REPO_NAME/
-    base: isProd ? "/greenbelt-scrollscape/" : "/",
+    // For custom domains, use root path
+    base: "/",
 
     server: {
       host: "::",
