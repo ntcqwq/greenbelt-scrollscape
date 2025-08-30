@@ -5,8 +5,8 @@ const navItems = [
   { label: 'Mission', href: '#mission' },
   { label: 'Impact', href: '#impact' },
   { label: 'Community', href: '#community' },
-  { label: 'Guardians', href: '#guardians' },
-  { label: 'Gallery', href: '#gallery' }
+  { label: 'Join the Movement', href: '#guardians' },
+  { label: 'Why We Fight', href: '#gallery' }
 ];
 
 export const Navigation = () => {
