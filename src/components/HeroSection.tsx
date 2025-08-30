@@ -44,7 +44,7 @@ export const HeroSection = () => {
             </motion.a>
             
             <motion.a
-              href="https://www.instagram.com/greenbelt_guardians/"
+              href="https://www.instagram.com/gengreenbelt/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 nature-border text-foreground rounded-xl font-semibold transition-all duration-300 inline-block text-center"

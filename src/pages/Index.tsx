@@ -32,7 +32,7 @@ const Index = () => {
             Protecting Ontario's natural heritage for future generations
           </p>
           <p className="text-sm text-muted-foreground">
-            © 2024 Gen-Greenbelt. All rights reserved.
+            © 2025 Gen-Greenbelt. All rights reserved.
           </p>
         </div>
       </footer>

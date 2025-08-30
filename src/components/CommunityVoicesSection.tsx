@@ -36,7 +36,7 @@ export const CommunityVoicesSection = () => {
   ];
 
   return (
-    <section id="community-voices" className="py-20 bg-card">
+    <section id="community" className="py-20 bg-card">
       <div className="content-container">
         <div className="text-center space-y-12">
           <AnimatedText delay={0.2}>
